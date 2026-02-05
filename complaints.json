@@ -1,0 +1,32 @@
+[
+    {
+    "id": 1,
+    "title": "Disconnection",
+    "description": "Wi-Fi automatically disconnects every hour",
+    "status": "open"
+    },
+    {
+    "id": 2,
+    "title": "Latency",
+    "description": "Ping of the connection is very high",
+    "status": "resolved"
+    },
+    {
+    "id": 3,
+    "title": "Cable cut",
+    "description": "Cable connection to router got twisted open",
+    "status": "open"
+    },
+    {
+    "id": 4,
+    "title": "LAN connection",
+    "description": "Not able to setup LAN with the Wi-Fi router provided",
+    "status": "open"
+    },
+    {
+    "id": 5,
+    "title": "Network speed",
+    "description": "Wi-Fi speed is 10x less than what I paid for",
+    "status": "resolved"
+    }
+]
