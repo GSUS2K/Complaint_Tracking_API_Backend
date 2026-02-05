@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.use(logger);
 
-app.use(auth);
+app.use(auth)
 
 app.use('/complaints', complaintRoutes)
 

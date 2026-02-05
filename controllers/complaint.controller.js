@@ -1,5 +1,7 @@
 import fs from 'fs'
 
+// import auth from '../middleware/auth.middleware.js'
+
 const stream = fs.createReadStream("./complaints.json",'utf-8');
 
 let complaints = [{}];
@@ -50,7 +52,7 @@ export const createComplaint = (req,res)=>{
 }
 
 export const resolveComplaint = (req,res)=>{
-    
+    // auth();
     const id = req.params.id;
 
     complaints = complaints.map(c => c.id == id ? {
@@ -66,7 +68,7 @@ export const resolveComplaint = (req,res)=>{
 }
 
 export const deleteComplaint = (req,res)=>{
-
+// auth();
     complaints = complaints.filter(c => c.id != req.params.id)
 
     updatedFile();
